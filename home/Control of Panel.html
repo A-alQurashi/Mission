@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css">
+    <title>Control of Panel</title>
+  </head>
+  <body>
+     <div class= "container"> 
+      <div class= "header-container"></div>
+      <heder>
+          <h1>SMART METHODS</h1>
+          <nav>
+              <ul>
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="Control of Panel.html">Control of Panel</a></li>
+                  <li><a href="index.html">Control of Moters</a></li>
+                  <li><a href="Contactus.html">Contact us</a></li>
+                  <li><a href="#"><form method="get" >
+                    language:
+                    <select name="language">
+                        <option value="English"> English </option>
+                        <option value="Arbic"> Arbic </option>
+                    </select>
+                </form></a></li>
+              </ul>
+          </nav>
+      </heder>
+      <style>
+
+        button {
+          width: 10%;
+          background-color: rgb(253, 99, 38);
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        button:hover {
+          background-color: #f56126;
+        }
+        
+        </style>
+      <h1> *Control of Panel*</h1>
+      <br>
+<form name="formBase" method="post" action="robotBase.php">
+
+<button style="color:rgb(250, 239, 239); margin: 60px;" type="submit" name="Stop" id="stop" value="stop"> <b> Stop  </b></button>
+<br>
+<button type="submit" name="Left" id="Left" value="Left">  <b>	&#8592; Left </b></button>
+<button type="submit" name="Right" id="Right" value="Right"> <b> Right &#8594; </b></button>
+<br>
+<button type="submit" name="Forward" id="Forward" value="Forward"><b>  Forward &#8593; </b></button>
+<button type="submit" name="Backward" id="Backward" value="Backward"><b> &#8595; Backward  </b></button>
+
+</form>
+
+<div class= "footer-container"></div>
+<footer>Copyright©2021 Smart Methods</footer>
+</div>
+
+</body>
+</html>

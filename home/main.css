@@ -1,0 +1,39 @@
+.container{
+    width: 1080px;
+    margin: auto;
+    background-color: beige;
+    padding: 10px;
+}
+
+nav{
+    background-color: coral;
+    width: 100%;
+}
+nav ul li{
+    background-color: coral ;
+    display:inline-block;
+    width: 150px;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: cornsilk;
+    text-align: center;
+    padding: 10px 0;
+}
+nav a:hover{
+    background-color:rgb(253, 250, 250) ;
+    color: coral ;
+}
+ .header-container.header {
+    background-color:black;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.main-container{
+    background-color:white;
+    color:black;
+    float: left;
+    height: 100%;
+}

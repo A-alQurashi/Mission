@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css">
+    <title>Control of Moters</title>
+  </head>
+  <body>
+     <div class= "container"> 
+      <div class= "header-container"></div>
+      <heder>
+          <h1>SMART METHODS</h1>
+          <nav>
+              <ul>
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="Control of Panel.html">Control of Panel</a></li>
+                  <li><a href="index.html">Control of Moters</a></li>
+                  <li><a href="Contactus.html">Contact us</a></li>
+                  <li><a href="#"><form method="get" >
+                    language:
+                    <select name="language">
+                        <option value="English"> English </option>
+                        <option value="Arbic"> Arbic </option>
+                    </select>
+                </form></a></li>
+              </ul>
+          </nav>
+      </heder>
+      <h1> *Control of Moters*</h1>
+<br>
+<form name="formArm" method="post" action="phpRoboticArm.php">
+<div class="slidecontainer">
+  <input type="range" min="0" max="180" value="90" class="slider" id="motor1" name="m1">
+  <p>Motor 1:  <span id="v1"></span></p>
+
+   <input type="range" min="0" max="180" value="90" class="slider" id="motor2" name="m2">
+  <p>Motor 2: <span id="v2"></span></p>
+
+   <input type="range" min="0" max="180" value="90" class="slider" id="motor3" name="m3">
+  <p>Motor 3: <span id="v3"></span></p>
+
+   <input type="range" min="0" max="180" value="90" class="slider" id="motor4" name="m4">
+  <p>Motor 4: <span id="v4"></span></p>
+
+    <input type="range" min="0" max="180" value="90" class="slider" id="motor5" name="m5">
+  <p>Motor 5: <span id="v5"></span></p>
+</div>
+<br>
+<input type="submit" name="save" id="Submit" value="Save">
+</form>
+<br>
+<form name="formArm2" method="post" action="RoboticArmResult.php">
+<button type="submit" name="run" id="run" value="run">  Run!! </button>
+</form>
+<script>var slider = document.getElementById("motor1");
+  var output = document.getElementById("v1");
+  output.innerHTML = slider.value;
+  
+  slider.oninput = function() {
+    output.innerHTML = this.value;
+  }
+  
+  var slider2 = document.getElementById("motor2");
+  var output2 = document.getElementById("v2");
+  output2.innerHTML = slider2.value;
+  
+  slider2.oninput = function() {
+    output2.innerHTML = this.value;
+  }
+  
+  var slider3 = document.getElementById("motor3");
+  var output3 = document.getElementById("v3");
+  output3.innerHTML = slider3.value;
+  
+  slider3.oninput = function() {
+    output3.innerHTML = this.value;
+  }
+  
+  var slider4 = document.getElementById("motor4");
+  var output4 = document.getElementById("v4");
+  output4.innerHTML = slider4.value;
+  
+  slider4.oninput = function() {
+    output4.innerHTML = this.value;
+  }
+  
+  var slider5 = document.getElementById("motor5");
+  var output5 = document.getElementById("v5");
+  output5.innerHTML = slider5.value;
+  
+  slider5.oninput = function() {
+    output5.innerHTML = this.value;
+  }
+  </script>
+
+               
+
+            
+            
+  
+     
+      <div class= "footer-container"></div>
+      <footer>Copyright©2021 Smart Methods</footer>
+     </div>
+
+
+
+     <script src="main.js.js"></script>
+  </body>
+</html>
